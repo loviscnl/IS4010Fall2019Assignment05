@@ -1,8 +1,10 @@
-/*
- * IS4010 Fal 2019
+/* 
+ * Nicholas Loviscek
+ * loviscnl@mail.uc.edu
+ * Due: 10/03/2019
+ * Class: IS4010 Fall 2019
  * Assignment 05
- * Bill Nicholson
- * nicholdw@ucmail.uc.edu
+ * Description: Create a method takes a football score and returns a string describing that score
  */
 package footballFun;
 
@@ -25,16 +27,22 @@ public class FootballFun {
 			System.out.println("At least one test failed");
 		}
 	}
+	/**
+	 * This method takes a football score and returns a string describing that score
+	 * @param score, the football score
+	 * @return a string describing the score
+	 */
 	public static String translateScore (int score) {
+	
 
-		if (score == 2) {return "safety";}
-		if (score == 3) {return "field goal";}
-		if (score == 6) {return "touchdown";}
-		if (score == 7) {return "touchdown and extra point";}
-		if (score == 8) {return "touchdown and 2-point conversion";}
-		if (score == -1) {return "";}
-		if (score == 1) {return "invalid";}
-		if (score == 10) {return "you must be playing Quidditch ";}
+		if (score == 2) {return "safety";}       // football score and corresponding string
+		if (score == 3) {return "field goal";}    // football score and corresponding string
+		if (score == 6) {return "touchdown";}    // football score and corresponding string
+		if (score == 7) {return "touchdown and extra point";}    // football score and corresponding string
+		if (score == 8) {return "touchdown and 2-point conversion";}   // football score and corresponding string
+		if (score == -1) {return "";}				// football score and corresponding string
+		if (score == 1) {return "invalid";}			// football score and corresponding string
+		if (score == 10) {return "you must be playing Quidditch ";}  // football score and corresponding string
 		
 		return "";
 	}
